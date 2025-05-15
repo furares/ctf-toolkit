@@ -45,75 +45,9 @@ pip install -r requirements.txt
 ```bash
 sudo python3 main.py
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Vehicle Terminal Screens</title>
-  <style>
-    body {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      color: white;
-      font-family: sans-serif;
-    }
-    .slideshow-container {
-      position: relative;
-      max-width: 800px;
-    }
-    .mySlides {
-      display: none;
-      width: 100%;
-    }
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-
-<div class="slideshow-container">
-  <div class="mySlides"><img src="images/bruteforce.png" alt="Terminal 1"></div>
-  <div class="mySlides"><img src="images/hashcrack.png" alt="Terminal 2"></div>
-  <div class="mySlides"><img src="images/hashgen.png" alt="Terminal 3"></div>
-  <div class="mySlides"><img src="images/mainmenu.png" alt="Terminal 4"></div>
-</div>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let slides = document.getElementsByClassName("mySlides");
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1; }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000);
-  }
-</script>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
+<p float="left">
+  <img src="images/mainmenu.png" width="300" />
+</p>
 
 
 
