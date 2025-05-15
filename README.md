@@ -45,6 +45,28 @@ pip install -r requirements.txt
 ```bash
 sudo python3 main.py #Some Tools Need Root. If You Get An Error, Run As Root
 ```
+---
+### 👁️ Nmap Scan Results
+The results of your Nmap scans will be stored in the `nmap_results/` directory. 📂
+
+### 🔑 RSA Key Cracking
+The `ssh2john.py` script required for cracking RSA keys should be located in the current directory. 📂
+
+### ⚠️ Important Notice 
+Some tools require certain dependencies to be pre-installed on your system. Please ensure that the necessary tools are already installed before using them. 🛠️
+
+### 🖥️ MAC Address Changer
+The MAC Address Changer tool was created by me. Please note that it may not always work perfectly on all systems, as it has been tested mainly on Linux Mint and Kali Linux. 🛠️
+
+Use it with caution, and ensure you're on a supported system for the best results! ⚠️
+
+
+### 🔥 Check Out My TryHackMe Profile
+> **[TryHackMe Profile](https://tryhackme.com/p/furares)** 👾
+
+
+
+
 
 
 
