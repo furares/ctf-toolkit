@@ -24,7 +24,7 @@ CTF-Toolkit is a toolkit designed for Capture The Flag (CTF) competitions and se
 
 ---
 
-### Banner Created With:
+## Banner Created With:
 -This ASCII banner was created using the [**ASCII Art Generator**](https://www.asciiart.eu/text-to-ascii-art) website.
 
 ---
