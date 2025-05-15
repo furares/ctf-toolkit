@@ -1,6 +1,6 @@
 # 🔐 CTF-Toolkit
 
-CTF-Toolkit is a toolkit designed for Capture The Flag (CTF) competitions and security testing. It integrates populer tools like **Nmap**, **Gobuster**, **Metasploit**, **Bettercap**, **Wireshark** and **Hydra**
+CTF-Toolkit is a toolkit designed for Capture The Flag (CTF) competitions and security testing. It integrates popular tools like **Nmap**, **Gobuster**, **Metasploit**, **Bettercap**, **Wireshark** and **Hydra**
 
 ![Security](https://img.shields.io/badge/CTF-Toolkit-critical?logo=hackthebox&color=red)
 ![Tested](https://img.shields.io/badge/Tested-Kali%20Linux-green?logo=linux)
