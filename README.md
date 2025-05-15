@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ## 🧠 Usage
 
 ```bash
-sudo python3 main.py #Some Tools Need Root. If You Get An Error, Run As Root
+sudo python3 main.py
 ```
 ---
 ### 👁️ Nmap Scan Results
