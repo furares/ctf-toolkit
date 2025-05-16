@@ -62,7 +62,7 @@ pip install -r requirements.txt
 sudo python3 main.py
 ```
 <p float="left">
-  <img src="images/mainmenu.png" width="1250" />
+  <img src=".img/mainmenu1.png" width="1250" />
 </p>
 
 
