@@ -13,6 +13,7 @@ from modules.met import metasploit
 from modules.bet import bettercap
 from modules.wire import wireshark
 from modules.mac_changer import macchange
+from modules.openvpn import vpn
 from termcolor import colored
 from datetime import datetime
 
@@ -85,7 +86,9 @@ Date : {date}""", "blue", attrs=['bold']))
 7- Metasploit (Start Metasploit)
 8- Bettercap (Network Sniffing and Spoofing)
 9- Wireshark (Analyze Network Traffic)
-10- Mac Address Changer (Tested on Linux Mint And Kali Linux)
+10-Mac Address Changer (Tested on Linux Mint And Kali Linux) {colored("Beta", "white", "on_red", attrs=['bold'])}
+11-Openvpn Connection (Connect Openvpn)
+12-System Update and Upgrade (System Update and Upgrade)
 0- Exit
 """)
 
@@ -158,14 +161,27 @@ Date : {date}""", "blue", attrs=['bold']))
             macchange.start()
             ask_continue()
             break
-        
+
+        elif option == 11:
+            clear()
+            vpn.start()
+            ask_continue()
+            break
+
+        elif option == 12:
+            clear()
+            print(colored("System Update And Upgrade...", "white", "on_red"))
+            print("-"*28)
+            s.run("sudo apt-get update -y && sudo apt-get upgrade -y", shell=True)
+            print(colored("[+] System has been updated successfully.", "green", attrs=['bold']))
+            sleep(0.5)
+            ask_continue()
+            break
+
+
         else:
             print(colored("[!] Goodbye...", "green", attrs=['bold']))
             break
 
-
 if __name__ == "__main__":
     main()
-
-
-    
