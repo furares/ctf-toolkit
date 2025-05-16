@@ -1,6 +1,5 @@
 import subprocess as s
 from time import sleep
-import os
 from termcolor import colored
 
 class vpn:
