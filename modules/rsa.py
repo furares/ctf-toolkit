@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import subprocess as s
 from termcolor import colored
 from time import sleep
